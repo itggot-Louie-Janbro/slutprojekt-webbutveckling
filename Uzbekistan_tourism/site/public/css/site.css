@@ -113,6 +113,9 @@ footer>h3 {
 .home_pageimg {
     grid-row: 1/3;
     grid-column: 1/3;
-    background-color: gray;
+}
+
+.home_pageimg>img {
+    margin: auto;
 }
 
