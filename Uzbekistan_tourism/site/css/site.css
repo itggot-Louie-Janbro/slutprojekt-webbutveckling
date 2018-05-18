@@ -1,3 +1,7 @@
+body {
+    background: url(../img/background_desert.jpg)
+}
+
 header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
