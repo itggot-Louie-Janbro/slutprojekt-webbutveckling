@@ -111,7 +111,7 @@ footer>h3 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.home_container {
+.index_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -119,19 +119,19 @@ footer>h3 {
     margin-bottom: 10px;
 }
 
-.home_pageimg {
+.index_pageimg {
     margin-top: 30px;
     grid-row: 1/3;
     grid-column: 1/3;
 }
 
-.home_pageimg>img {
+.index_pageimg>img {
     margin: auto;
     border-radius: 10px;
 }
 
 
-.home_discover {
+.index_discover {
     grid-row: 1/3;
     grid-column: 3/5;
     background-color: gray;
@@ -141,13 +141,13 @@ footer>h3 {
 
 
 
-.home_discover_headline {
+.index_discover_headline {
     text-align: center;
     color: white;
     font-size: 45px;
 }
 
-.home_discover>p {
+.index_discover>p {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-left: 30px;
