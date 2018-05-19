@@ -1,5 +1,6 @@
 body {
-    background: url(../img/background_desert.jpg)
+    background: url(../img/background_desert.jpg);
+    grid-template-columns: 
 }
 
 header {
@@ -7,8 +8,7 @@ header {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: 150px;
-    background-color: grey;
-    opacity: 0.7;
+    background-color: rgba(140,140,140,0.7);
 }
 
 h1 {
@@ -36,7 +36,7 @@ h1 {
 }
 
 .lay_destinations>a:hover, .lay_hotels>a:hover, .lay_tours>a:hover {
-    color: purple;
+    color: red;
     transition: 0.25s;
 }
 
@@ -79,18 +79,19 @@ h1 {
 }
 
 .lay_searchbar>input {
-    width: 60px;
-    height: 20px;
-    transition: 0.5s;
+    width: 0px;
+    visibility: hidden;
+    height: 0px;
+    transition: all 0.5s;
 }
 
-.lay_searchbar>input:hover{
-    width: 180px;
-    transition: 0.5s;
-}
+/* .lay_searchbar>input:hover{ */
+    /* width: 180px; */
+    /* transition: 0.5s; */
+/* } */
 
 .lay_searchbar>i:hover {
-    color: purple;
+    color: red;
     font-size: 32px;
     transition: 0.25s;
     text-align: right;
@@ -103,12 +104,20 @@ h1 {
     margin-right: 20px;
 }
 
+.lay_menu {
+    height: 0px;
+    width: 140px;
+    background-color: rgba(140, 140, 140, 0.7);
+    position: absolute;
+    z-index: 10;
+    transition: 0.5s;
+}
+
 footer {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     height: 75px;
-    background-color: gray;
-    opacity: 0.7;
+    background-color: rgba(140,140,140,0.7);
 }
 
 footer>h3 {
@@ -134,15 +143,14 @@ footer>h3 {
 .index_pageimg>img {
     margin: auto;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px gray;
+    box-shadow: 2px 2px 2px rgb(140, 140, 140);
 }
 
 
 .index_discover {
     grid-row: 1/5;
     grid-column: 3/5;
-    background-color: gray;
-    opacity: 0.7;
+    background-color: rgba(140,140,140,0.7);
 }
 
 
@@ -162,8 +170,7 @@ footer>h3 {
 }
 
 .index_footer_left {
-    background-color: gray;
-    opacity: 0.7;
+    background-color: rgba(140,140,140,0.7);
     grid-column: span 1;
 }
 
@@ -174,8 +181,7 @@ footer>h3 {
 
 .index_footer_centerleft {
     grid-column: span 1;
-    background-color: gray;
-    opacity: 0.7;
+    background-color: rgba(140,140,140,0.7);
 }
 
 .index_footer_centerleft>h3 {
@@ -192,69 +198,76 @@ footer>h3 {
 
 .hotel_box1, .hotel_box2, .hotel_box3, .hotel_box4, .hotel_box5, .hotel_box6, .hotel_box7, .hotel_box8, .hotel_box9 {
     height: 300px;
-    opacity: 0.5;
-    border: dotted green;
-} 
-
-.hotel_box1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    background-color: gold;
-
+    display: grid;
 }
 
-.hotel_box2 {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    background-color: gold;
-
+.hotel_piclink {
+    margin: auto;
 }
 
-.hotel_box3 {
-    grid-row: 1/2;
-    grid-column: 3/4;
-    background-color: gold;
-
+.hotel_box1>a>img, .hotel_box2>a>img, .hotel_box3>a>img, .hotel_box4>a>img, .hotel_box5>a>img, .hotel_box6>a>img, .hotel_box7>a>img, .hotel_box8>a>img, .hotel_box9>a>img {
+    margin: auto;
+    margin-top: 10px;
+    border: solid 2px rgb(140,140,140);
+    transition: 0.25s;
 }
 
-.hotel_box4 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    background-color: gold;
-
+.hotel_box1>a>img:hover, .hotel_box2>a>img:hover, .hotel_box3>a>img:hover, .hotel_box4>a>img:hover, .hotel_box5>a>img:hover, .hotel_box6>a>img:hover, .hotel_box7>a>img:hover, .hotel_box8>a>img:hover, .hotel_box9>a>img:hover {
+    /* border: solid red 3px; */
+    transition: 0.25s;
+    transform: scale(1.1)
 }
 
-.hotel_box5 {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    background-color: gold;
-
+h4.hotel_hotel {
+    color: white;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
 }
 
-.hotel_box6 {
-    grid-row: 2/3;
-    grid-column: 3/4;
-    background-color: gold;
 
+.hotel_box1 { 
+    grid-row: span 1;
+    grid-column: span 1;
 }
 
-.hotel_box7 {
-    grid-row: 3/4;
-    grid-column: 1/2;
-    background-color: gold;
-
+.hotel_box2 { 
+    grid-row: span 1;
+    grid-column: span 1;
 }
 
-.hotel_box8 {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    background-color: gold;
-
+.hotel_box3 { 
+    grid-row: span 1;
+    grid-column: span 1;
 }
 
-.hotel_box9 {
-    grid-row: 3/4;
-    grid-column: 3/4;
-    background-color: gold;
+.hotel_box4 { 
+    grid-row: span 1;
+    grid-column: span 1;
+}
 
+.hotel_box5 { 
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hotel_box6 { 
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hotel_box7 { 
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hotel_box8 { 
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hotel_box9 { 
+    grid-row: span 1;
+    grid-column: span 1;
 }

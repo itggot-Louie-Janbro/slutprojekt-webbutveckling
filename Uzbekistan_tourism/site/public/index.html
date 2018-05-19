@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="css/site.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="js/layout_searchbar.js"></script>
+    <script src="js/lay_destinations_menu.js"></script>
 </head>
 <body>
     <header>
-        <div class="lay_destinations">
-            <a href="LÄGG TILL LÄNK HÄR">Destinations</a>
+        <div class="lay_destinations" onmouseenter= "lay_destinations_appear()" onmouseleave= "lay_destinations_disappear()">
+            <a href="LÄGG TILL LÄNK HÄR" >Destinations</a>
+            <div class="lay_menu"></div>
         </div>
         <div class="lay_hotels">
             <a href="hotel.html">Hotels</a>
@@ -29,11 +32,15 @@
             <h1> <a href="index.html" class="lay_headline_link">Uzbekistan Tourism</a> </h1>
         </div>
 
+
+
         <div class="lay_searchbar">
-            <input placeholder="Search" type="text">
-            <i class="material-icons">&#xE8B6;</i>
+            <input class="lay_searchbar_input" placeholder="Search" type="text">
+            <i class="material-icons" onclick="lay_searchbar_appear()">&#xE8B6;</i> 
         </div>
     </header>
+
+    </div>
     <main>
         <div class="index_container">
     <div class="index_pageimg">
