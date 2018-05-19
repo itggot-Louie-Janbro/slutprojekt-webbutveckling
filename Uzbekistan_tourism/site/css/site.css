@@ -1,6 +1,5 @@
 body {
     background: url(../img/background_desert.jpg);
-    grid-template-columns: 
 }
 
 header {
@@ -111,6 +110,7 @@ h1 {
     position: absolute;
     z-index: 10;
     transition: 0.5s;
+    overflow: hidden;
 }
 
 footer {
