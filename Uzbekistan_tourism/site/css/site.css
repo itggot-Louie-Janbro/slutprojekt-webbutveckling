@@ -32,6 +32,7 @@ h1 {
     font-size: 25px;
     transition: 0.25s;
     text-decoration: none;
+    text-align: center;
 }
 
 .lay_destinations>a:hover, .lay_hotels>a:hover, .lay_tours>a:hover {
@@ -103,7 +104,7 @@ h1 {
     margin-right: 20px;
 }
 
-.lay_menu {
+.lay_menu_d {
     height: 0px;
     width: 140px;
     background-color: rgba(140, 140, 140, 0.7);
@@ -112,6 +113,28 @@ h1 {
     transition: 0.5s;
     overflow: hidden;
 }
+
+.lay_menu_h {
+    height: 0px;
+    width: 140px;
+    background-color: rgba(140, 140, 140, 0.7);
+    position: absolute;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.lay_menu_t {
+    height: 0px;
+    width: 140px;
+    background-color: rgba(140, 140, 140, 0.7);
+    position: absolute;
+    z-index: 10;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
 
 footer {
     grid-template-columns: repeat(6, 1fr);
@@ -164,8 +187,9 @@ footer>h3 {
 .index_discover>p {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin-left: 30px;
-    margin-right: 30px;
+    /* margin-left: 30px; */
+    /* margin-right: 30px; */
+    text-align: center;
 
 }
 
