@@ -295,3 +295,36 @@ h4.hotel_hotel {
     grid-row: span 1;
     grid-column: span 1;
 }
+
+
+.tours_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tours_attraction {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: yellow;
+}
+
+.tours_links {
+    grid-column: span 2;
+    grid-row: 2/3;
+    background-color: blue;
+}
+
+.tours_map {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: green;
+}
+
+.tours_trans {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: red;
+}
