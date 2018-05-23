@@ -330,7 +330,11 @@ h4.hotel_hotel {
 .tours_map {
     grid-column: span 2;
     grid-row: span 4;
-    background-color: green;
+    overflow: hidden;
+}
+
+.tours_map>img {
+    margin: 10px;
 }
 
 .tours_headline {
