@@ -218,6 +218,8 @@ footer>h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    background-color: rgba(140, 140, 140, 0.7);
+    margin-top: 10px;
 }
 
 .hotel_box1, .hotel_box2, .hotel_box3, .hotel_box4, .hotel_box5, .hotel_box6, .hotel_box7, .hotel_box8, .hotel_box9 {
