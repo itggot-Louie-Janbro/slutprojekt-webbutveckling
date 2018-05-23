@@ -2,6 +2,8 @@ body {
     background: url(../img/background_desert.jpg);
 }
 
+
+
 header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -302,21 +304,22 @@ h4.hotel_hotel {
 .tours_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: rgba(140, 140, 140, 0.7);
 }
 
 .tours_attraction {
     grid-column: span 2;
-    grid-row: span 1;
+    grid-row: span 2;
     display: grid;
+
 }
 
 .tours_links {
     grid-column: span 2;
-    grid-row: 2/3;
-    background-color: blue;
+    grid-row: 3/5;
     display: grid;
     overflow: auto;
     height: 400px;
@@ -326,21 +329,28 @@ h4.hotel_hotel {
 
 .tours_map {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 4;
     background-color: green;
+}
+
+.tours_headline {
+    grid-row: span 1;
+    grid-column: span 4;
 }
 
 .tours_trans {
     grid-row: span 1;
     grid-column: span 1;
-    background-color: red;
+    border-left: dotted white 2px;
+    border-right: dotted white 2px;
+    display: grid;
+    height: 200px;
 }
 
 
 
 .tours_attraction>img {
     margin: auto;
-    border: solid 2px rgba(140, 140, 140, 0.7)
 }
 
 .tours_links>h2 {
@@ -353,4 +363,19 @@ h4.hotel_hotel {
 .tours_links>p {
     color: white;
     margin: 4px;
+}
+
+.tours_trans>a>svg {
+    margin: auto;
+}
+
+.tours_trans>a {
+    display: grid;
+}
+
+.tours_headline>h2 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
 }
