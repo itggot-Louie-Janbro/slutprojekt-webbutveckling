@@ -310,13 +310,18 @@ h4.hotel_hotel {
 .tours_attraction {
     grid-column: span 2;
     grid-row: span 1;
-    background-color: yellow;
+    display: grid;
 }
 
 .tours_links {
     grid-column: span 2;
     grid-row: 2/3;
     background-color: blue;
+    display: grid;
+    overflow: auto;
+    height: 400px;
+    margin: 10px;
+    margin-top: 0px;
 }
 
 .tours_map {
@@ -329,4 +334,23 @@ h4.hotel_hotel {
     grid-row: span 1;
     grid-column: span 1;
     background-color: red;
+}
+
+
+
+.tours_attraction>img {
+    margin: auto;
+    border: solid 2px rgba(140, 140, 140, 0.7)
+}
+
+.tours_links>h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.tours_links>p {
+    color: white;
+    margin: 4px;
 }
