@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/site.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="js/lay_mobile_menu.js"></script>
     <script src="js/layout_searchbar.js"></script>
     <script src="js/lay_destinations_menu.js"></script>
     <script src="js/lay_hotels_menu.js"></script>
@@ -46,8 +47,18 @@
             <i class="material-icons" onclick="lay_searchbar_appear()">&#xE8B6;</i> 
         </div>
 
-        <div class="lay_mobile_menu">
-            <i class="material-icons">menu</i>
+        <div class="lay_mobile_icon">
+            <i class="material-icons"  onclick="toggleMenu()">menu</i>
+        </div>
+
+        <div class="lay_mobile_menu_div">
+            <div class="lay_mobile_menu">
+                <div class="lay_mobile_menu_content"><a href="LÄGG TILL LÄNK HÄR">Destinations</a></div>
+                <div class="lay_mobile_menu_content"><a href="hotel.html">Hotels</a></div>
+                <div class="lay_mobile_menu_content"><a href="tours.html">Tours</a></div>
+                <div class="lay_mobile_searchbar"><input placeholder="Search" type="text"></div>
+                <div class="lay_mobile_button"><button>Search</button></div>
+            </div>
         </div>
     </header>
 
