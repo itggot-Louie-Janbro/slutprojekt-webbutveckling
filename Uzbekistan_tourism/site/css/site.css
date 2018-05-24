@@ -314,6 +314,7 @@ h4.hotel_hotel {
     grid-column: span 2;
     grid-row: span 2;
     display: grid;
+    overflow: hidden;
 
 }
 
