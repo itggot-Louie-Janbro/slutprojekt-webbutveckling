@@ -34,7 +34,6 @@ h1 {
     font-size: 25px;
     transition: 0.25s;
     text-decoration: none;
-    text-align: center;
 }
 
 .lay_destinations>a:hover, .lay_hotels>a:hover, .lay_tours>a:hover {
@@ -113,7 +112,33 @@ h1 {
     position: absolute;
     z-index: 10;
     transition: 0.25s;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.lay_menu_d>a, .lay_menu_t>a, .lay_menu_h>a {
+    grid-row: span 1;
+    grid-column: span 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.25s;
+}
+
+.lay_menu_h>a {
+    margin: 10px;
+}
+
+.lay_menu_d>a:hover, .lay_menu_t>a:hover, .lay_menu_h>a:hover{
+    color: red;
+    transition: 0.25s;
 }
 
 .lay_menu_h {
@@ -123,7 +148,10 @@ h1 {
     position: absolute;
     z-index: 10;
     transition: 0.25s;
-    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    display: grid;
+    overflow: auto;
 }
 
 .lay_menu_t {
@@ -133,8 +161,29 @@ h1 {
     position: absolute;
     z-index: 10;
     transition: 0.25s;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
     overflow: hidden;
 }
+
+.lay_menu_t>a {
+    margin: auto;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.lay_menu_t>a>svg {
+    transition: 0.25s;
+}
+
+.lay_menu_t>a>svg:hover {
+    transition: 0.25s;
+    height: 85px;
+    width: 85px;
+    
+}
+
 
 .lay_mobile_icon {
     display: none;
